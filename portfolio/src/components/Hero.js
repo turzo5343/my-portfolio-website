@@ -48,7 +48,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
           >
-            Expert in custom automation, AI voice & workflow architecture —{' '}
+            Expert in custom automation, AI voice & workflow architecture {' '}
             <span className="font-semibold text-purple-600 dark:text-purple-400">
               n8n, GoHighLevel, Airtable, Vapi, ElevenLabs
             </span>{' '}
@@ -107,7 +107,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
           >
-            ✓ Projects delivered: automation for startups, agencies & SMEs — fast, reliable, measurable outcomes.
+            ✓ Projects delivered: automation for startups, agencies & SMEs fast, reliable, measurable outcomes.
           </motion.p>
         </motion.div>
 

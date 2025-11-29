@@ -1,9 +1,8 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 const CursorTrail = () => {
   useEffect(() => {
     let cursorTrails = [];
-    let animationFrameId;
 
     const createTrail = (e) => {
       const trail = document.createElement('div');

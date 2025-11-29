@@ -402,17 +402,17 @@ const WorkflowShowcase = () => {
                 initial={{ opacity: 0, scale: 0 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                whileHover={{ scale: 1.2, y: -5 }}
-                animate={{
-                  y: [0, -10, 0],
-                }}
-                transition={{
+                transition={{ 
+                  delay: index * 0.1,
                   y: {
                     duration: 2 + index * 0.2,
                     repeat: Infinity,
                     ease: 'easeInOut',
                   },
+                }}
+                whileHover={{ scale: 1.2, y: -5 }}
+                animate={{
+                  y: [0, -10, 0],
                 }}
               >
                 <div className={`p-4 bg-gradient-to-br ${platform.color} rounded-xl shadow-lg group-hover:shadow-2xl transition-shadow`}>

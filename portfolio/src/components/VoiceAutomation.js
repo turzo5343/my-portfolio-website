@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Phone, PhoneIncoming, PhoneOutgoing, Mic, Play, Pause } from 'lucide-react';
+import { PhoneIncoming, PhoneOutgoing, Mic, Play, Pause } from 'lucide-react';
 
 const VoiceAutomation = () => {
   const [isPlaying, setIsPlaying] = useState(false);

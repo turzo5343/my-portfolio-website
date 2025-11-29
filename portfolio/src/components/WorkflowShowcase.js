@@ -366,7 +366,7 @@ const WorkflowShowcase = () => {
             <ul className="space-y-3 text-green-800 dark:text-green-200">
               <li className="flex items-start gap-2">
                 <span className="text-2xl">⚡</span>
-                <span className="text-lg">< 5 minutes response time (24/7)</span>
+                <span className="text-lg">&lt; 5 minutes response time (24/7)</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-2xl">✅</span>

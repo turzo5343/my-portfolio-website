@@ -30,7 +30,7 @@ const Footer = () => {
       icon: Mail,
       href: 'mailto:turzo5343@gmail.com',
       label: 'Email',
-      color: 'hover:text-purple-600',
+      color: 'hover:text-cyan-600',
     },
   ];
 

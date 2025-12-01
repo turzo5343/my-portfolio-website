@@ -76,30 +76,29 @@ const VoiceAutomation = () => {
           })}
         </div>
 
-        {/* Demo player */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-br from-purple-500 via-pink-500 to-blue-500 rounded-3xl p-1"
+          className="bg-gradient-to-br from-blue-500 via-cyan-500 to-teal-500 rounded-3xl p-1"
         >
           <div className="bg-white dark:bg-gray-800 rounded-3xl p-12">
             <div className="text-center mb-8">
               <h3 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">
                 Listen to a Voice Agent in Action
               </h3>
-              <p className="text-lg text-gray-600 dark:text-gray-300">
-                This AI handles appointment booking, answers questions, and routes calls — all with natural conversation
+              <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                This AI handles appointment booking, answers questions, and routes calls with natural conversation.
               </p>
             </div>
 
             {/* Audio player mockup */}
             <div className="max-w-2xl mx-auto">
-              <div className="bg-gradient-to-r from-purple-100 to-pink-100 dark:from-purple-900/30 dark:to-pink-900/30 rounded-2xl p-8">
+              <div className="bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-900/30 dark:to-cyan-900/30 rounded-2xl p-8">
                 <div className="flex items-center justify-center gap-6 mb-6">
                   <motion.button
                     onClick={() => setIsPlaying(!isPlaying)}
-                    className="w-20 h-20 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 flex items-center justify-center text-white shadow-lg hover:shadow-xl"
+                    className="w-20 h-20 rounded-full bg-gradient-to-r from-blue-600 to-cyan-600 flex items-center justify-center text-white shadow-lg hover:shadow-xl transition-all"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                     data-testid="play-voice-demo-btn"
@@ -109,7 +108,7 @@ const VoiceAutomation = () => {
                   <div className="flex-1">
                     <div className="h-2 bg-gray-300 dark:bg-gray-700 rounded-full overflow-hidden">
                       <motion.div
-                        className="h-full bg-gradient-to-r from-purple-600 to-pink-600"
+                        className="h-full bg-gradient-to-r from-blue-600 to-cyan-600"
                         initial={{ width: '0%' }}
                         animate={{ width: isPlaying ? '100%' : '0%' }}
                         transition={{ duration: isPlaying ? 30 : 0 }}
@@ -125,27 +124,27 @@ const VoiceAutomation = () => {
 
                 <div className="grid grid-cols-3 gap-4 text-center">
                   <div className="bg-white dark:bg-gray-800 rounded-xl p-4">
-                    <div className="text-3xl font-bold text-purple-600 dark:text-purple-400">24/7</div>
+                    <div className="text-3xl font-bold text-blue-600 dark:text-cyan-400">24/7</div>
                     <div className="text-sm text-gray-600 dark:text-gray-400">Availability</div>
                   </div>
                   <div className="bg-white dark:bg-gray-800 rounded-xl p-4">
-                    <div className="text-3xl font-bold text-purple-600 dark:text-purple-400">80%</div>
+                    <div className="text-3xl font-bold text-blue-600 dark:text-cyan-400">80%</div>
                     <div className="text-sm text-gray-600 dark:text-gray-400">Calls Handled</div>
                   </div>
                   <div className="bg-white dark:bg-gray-800 rounded-xl p-4">
-                    <div className="text-3xl font-bold text-purple-600 dark:text-purple-400">70%</div>
+                    <div className="text-3xl font-bold text-blue-600 dark:text-cyan-400">70%</div>
                     <div className="text-sm text-gray-600 dark:text-gray-400">Cost Reduction</div>
                   </div>
                 </div>
               </div>
 
               <motion.button
-                className="w-full mt-8 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-semibold text-xl shadow-lg hover:shadow-xl"
-                whileHover={{ scale: 1.02, y: -2 }}
+                className="w-full mt-8 px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg font-semibold text-base shadow-lg hover:shadow-xl transition-all"
+                whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 data-testid="request-voice-prototype-btn"
               >
-                Request a Voice Agent Prototype
+                Request Voice Agent Prototype
               </motion.button>
             </div>
           </div>

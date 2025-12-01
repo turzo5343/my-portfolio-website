@@ -169,19 +169,19 @@ const WorkflowShowcase = () => {
           <h2 className="text-5xl md:text-6xl font-bold mb-6">
             <span className="text-gradient">Interactive Workflow</span> Architecture
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
-            See how automation flows through your systems — click any node to explore
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8 leading-relaxed">
+            See how automation flows through your systems. Click any node to explore.
           </p>
           <motion.button
             onClick={playAnimation}
             disabled={isPlaying}
-            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-semibold text-lg shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg font-semibold text-base shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed transition-all"
             whileHover={{ scale: isPlaying ? 1 : 1.05 }}
             whileTap={{ scale: isPlaying ? 1 : 0.95 }}
             data-testid="play-workflow-btn"
           >
             <Play size={20} />
-            {isPlaying ? 'Running...' : 'Run Demo Workflow'}
+            {isPlaying ? 'Running' : 'Run Demo Workflow'}
           </motion.button>
         </motion.div>
 
@@ -334,21 +334,21 @@ const WorkflowShowcase = () => {
               <h3 className="text-2xl font-bold text-red-900 dark:text-red-100">Before Automation</h3>
             </div>
             <ul className="space-y-3 text-red-800 dark:text-red-200">
-              <li className="flex items-start gap-2">
-                <span className="text-2xl">⏰</span>
-                <span className="text-lg">24-48 hours to respond to leads</span>
+              <li className="flex items-start gap-3">
+                <span className="text-xl">⏰</span>
+                <span className="text-base">24 to 48 hours to respond to leads</span>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="text-2xl">❌</span>
-                <span className="text-lg">40% of leads never contacted</span>
+              <li className="flex items-start gap-3">
+                <span className="text-xl">✕</span>
+                <span className="text-base">40% of leads never contacted</span>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="text-2xl">👥</span>
-                <span className="text-lg">3 people manually entering data</span>
+              <li className="flex items-start gap-3">
+                <span className="text-xl">👥</span>
+                <span className="text-base">3 people manually entering data</span>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="text-2xl">💸</span>
-                <span className="text-lg">$15K/month in wasted opportunities</span>
+              <li className="flex items-start gap-3">
+                <span className="text-xl">💸</span>
+                <span className="text-base">$15K monthly in wasted opportunities</span>
               </li>
             </ul>
           </motion.div>
@@ -364,21 +364,21 @@ const WorkflowShowcase = () => {
               <h3 className="text-2xl font-bold text-green-900 dark:text-green-100">After Automation</h3>
             </div>
             <ul className="space-y-3 text-green-800 dark:text-green-200">
-              <li className="flex items-start gap-2">
-                <span className="text-2xl">⚡</span>
-                <span className="text-lg">&lt; 5 minutes response time (24/7)</span>
+              <li className="flex items-start gap-3">
+                <span className="text-xl">⚡</span>
+                <span className="text-base">Under 5 minutes response time, 24/7</span>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="text-2xl">✅</span>
-                <span className="text-lg">100% of leads captured & routed</span>
+              <li className="flex items-start gap-3">
+                <span className="text-xl">✓</span>
+                <span className="text-base">100% of leads captured and routed</span>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="text-2xl">🤖</span>
-                <span className="text-lg">Zero manual data entry</span>
+              <li className="flex items-start gap-3">
+                <span className="text-xl">🤖</span>
+                <span className="text-base">Zero manual data entry</span>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="text-2xl">📈</span>
-                <span className="text-lg">+65% conversion rate increase</span>
+              <li className="flex items-start gap-3">
+                <span className="text-xl">📈</span>
+                <span className="text-base">65% conversion rate increase</span>
               </li>
             </ul>
           </motion.div>
@@ -492,7 +492,7 @@ const WorkflowShowcase = () => {
 
                 <motion.button
                   onClick={() => setSelectedNode(null)}
-                  className="w-full mt-6 px-6 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-xl font-semibold text-lg"
+                  className="w-full mt-6 px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-xl font-semibold text-base shadow-lg hover:shadow-xl transition-all"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >

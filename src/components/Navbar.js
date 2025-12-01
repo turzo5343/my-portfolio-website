@@ -72,15 +72,14 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               {darkMode ? <Sun size={20} /> : <Moon size={20} />}
             </motion.button>
 
-            {/* Hire Me CTA */}
             <motion.a
               href="#contact"
-              className="hidden md:block px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-shadow"
-              whileHover={{ scale: 1.05, boxShadow: '0 20px 40px rgba(139, 92, 246, 0.4)' }}
+              className="hidden md:block px-5 py-2.5 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg font-semibold text-base shadow-lg hover:shadow-xl transition-all"
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               data-testid="hire-me-nav-btn"
             >
-              Hire Me
+              Get Started
             </motion.a>
 
             {/* Mobile menu button */}
@@ -117,10 +116,10 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             ))}
             <a
               href="#contact"
-              className="block w-full text-center px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-semibold text-lg"
+              className="block w-full text-center px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg font-semibold text-base"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Hire Me
+              Get Started
             </a>
           </div>
         </motion.div>

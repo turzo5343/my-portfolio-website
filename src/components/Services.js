@@ -104,8 +104,8 @@ const Services = () => {
           <h2 className="text-5xl md:text-6xl font-bold mb-6">
             <span className="text-gradient">Services</span> That Drive Results
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Proven automation solutions that eliminate bottlenecks and multiply your team's output
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            Proven automation solutions that eliminate bottlenecks and multiply your team's output.
           </p>
         </motion.div>
 
@@ -142,31 +142,30 @@ const Services = () => {
                 </h3>
                 
                 <div className="space-y-3 mb-6">
-                  <p className="text-gray-600 dark:text-gray-400">
-                    <span className="font-semibold text-red-600 dark:text-red-400">Problem:</span> {service.problem}
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                    <span className="font-semibold text-red-600 dark:text-red-400">Challenge:</span> {service.problem}
                   </p>
-                  <p className="text-gray-600 dark:text-gray-400">
-                    <span className="font-semibold text-green-600 dark:text-green-400">Outcome:</span> {service.outcome}
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                    <span className="font-semibold text-green-600 dark:text-green-400">Result:</span> {service.outcome}
                   </p>
                 </div>
 
-                {/* CTAs */}
                 <div className="flex gap-3">
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="flex-1 px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-lg font-semibold text-sm"
+                    className="flex-1 px-4 py-2 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg font-semibold text-sm shadow-md hover:shadow-lg transition-all"
                     data-testid={`see-sample-btn-${index}`}
                   >
-                    See Sample
+                    View Sample
                   </motion.button>
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="flex-1 px-4 py-2 border-2 border-purple-600 text-purple-600 dark:text-purple-400 rounded-lg font-semibold text-sm hover:bg-purple-50 dark:hover:bg-purple-900/20 transition-colors"
+                    className="flex-1 px-4 py-2 border-2 border-blue-600 text-blue-600 dark:text-blue-400 rounded-lg font-semibold text-sm hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all"
                     data-testid={`request-consult-btn-${index}`}
                   >
-                    Request Consult
+                    Get Started
                   </motion.button>
                 </div>
               </motion.div>

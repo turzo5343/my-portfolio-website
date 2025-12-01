@@ -64,8 +64,8 @@ const UseCases = () => {
           <h2 className="text-5xl md:text-6xl font-bold mb-6">
             <span className="text-gradient">Real Results</span> from Real Projects
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Measurable outcomes that transformed businesses — not just theory, actual implementations
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            Measurable outcomes that transformed businesses. Not just theory, actual implementations.
           </p>
         </motion.div>
 
@@ -136,11 +136,11 @@ const UseCases = () => {
 
                     <motion.a
                       href="#workflows"
-                      className="inline-flex items-center gap-2 text-purple-600 dark:text-purple-400 font-semibold text-lg hover:gap-4 transition-all"
+                      className="inline-flex items-center gap-2 text-blue-600 dark:text-cyan-400 font-semibold text-base hover:gap-4 transition-all"
                       whileHover={{ x: 5 }}
                       data-testid={`show-workflow-btn-${index}`}
                     >
-                      Show my workflow →
+                      View Workflow
                     </motion.a>
                   </div>
                 </div>

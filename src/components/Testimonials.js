@@ -78,9 +78,8 @@ const Testimonials = () => {
                 ))}
               </div>
 
-              {/* Testimonial text */}
-              <p className="text-gray-700 dark:text-gray-300 text-lg mb-6 leading-relaxed">
-                "{testimonial.text}"
+              <p className="text-gray-700 dark:text-gray-300 text-base mb-6 leading-relaxed">
+                {testimonial.text}
               </p>
 
               {/* Metric badge */}
@@ -111,17 +110,17 @@ const Testimonials = () => {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <div className="inline-flex flex-wrap justify-center gap-8 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-2xl px-12 py-8">
+          <div className="inline-flex flex-wrap justify-center gap-8 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 rounded-2xl px-12 py-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-purple-600 dark:text-purple-400">50+</div>
+              <div className="text-4xl font-bold text-blue-600 dark:text-cyan-400">50+</div>
               <div className="text-gray-600 dark:text-gray-400">Projects Delivered</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-purple-600 dark:text-purple-400">95%</div>
+              <div className="text-4xl font-bold text-blue-600 dark:text-cyan-400">95%</div>
               <div className="text-gray-600 dark:text-gray-400">Client Satisfaction</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-purple-600 dark:text-purple-400">24/7</div>
+              <div className="text-4xl font-bold text-blue-600 dark:text-cyan-400">24/7</div>
               <div className="text-gray-600 dark:text-gray-400">Support Available</div>
             </div>
           </div>

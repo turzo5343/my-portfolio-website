@@ -34,28 +34,26 @@ const Hero = () => {
             transition={{ delay: 0.2 }}
           >
             <span className="text-gradient">
-              I build smart automations
+              Smart Automations
             </span>
             <br />
             <span className="text-gray-900 dark:text-white">
-              that save time & scale revenue
+              That Save Time and Scale Revenue
             </span>
           </motion.h1>
 
           <motion.p
-            className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-2xl"
+            className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-2xl leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
           >
-            Expert in custom automation, AI voice & workflow architecture —{' '}
-            <span className="font-semibold text-purple-600 dark:text-purple-400">
-              n8n, GoHighLevel, Airtable, Vapi, ElevenLabs
-            </span>{' '}
-            and more.
+            Expert in custom automation, AI voice, and workflow architecture using{' '}
+            <span className="font-semibold text-blue-600 dark:text-cyan-400">
+              n8n, GoHighLevel, Airtable, Vapi, and ElevenLabs
+            </span>.
           </motion.p>
 
-          {/* CTAs */}
           <motion.div
             className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
             initial={{ opacity: 0, y: 20 }}
@@ -66,48 +64,47 @@ const Hero = () => {
               href="https://www.linkedin.com/in/tanvir-turzo-53a213301/"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-full font-semibold text-lg shadow-lg hover:shadow-2xl transition-all"
-              whileHover={{ scale: 1.05, y: -3 }}
+              className="group flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg font-semibold text-base shadow-lg hover:shadow-2xl transition-all"
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               data-testid="linkedin-cta-btn"
             >
-              <Linkedin size={24} />
-              Contact on LinkedIn
+              <Linkedin size={20} />
+              LinkedIn
             </motion.a>
 
             <motion.a
               href="https://wa.me/8801316450823"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-full font-semibold text-lg shadow-lg hover:shadow-2xl transition-all"
-              whileHover={{ scale: 1.05, y: -3 }}
+              className="group flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-lg font-semibold text-base shadow-lg hover:shadow-2xl transition-all"
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               data-testid="whatsapp-cta-btn"
             >
-              <MessageCircle size={24} />
+              <MessageCircle size={20} />
               WhatsApp
             </motion.a>
 
             <motion.a
               href="mailto:turzo5343@gmail.com"
-              className="group flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-semibold text-lg shadow-lg hover:shadow-2xl transition-all"
-              whileHover={{ scale: 1.05, y: -3 }}
+              className="group flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-600 to-teal-600 text-white rounded-lg font-semibold text-base shadow-lg hover:shadow-2xl transition-all"
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               data-testid="email-cta-btn"
             >
-              <Mail size={24} />
+              <Mail size={20} />
               Email
             </motion.a>
           </motion.div>
 
-          {/* Trust line */}
           <motion.p
-            className="text-sm md:text-base text-gray-500 dark:text-gray-400 italic"
+            className="text-base text-gray-600 dark:text-gray-400"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
           >
-            ✓ Projects delivered: automation for startups, agencies & SMEs — fast, reliable, measurable outcomes.
+            Delivering automation for startups, agencies, and SMEs with fast, reliable, and measurable outcomes.
           </motion.p>
         </motion.div>
 
@@ -130,8 +127,7 @@ const Hero = () => {
               ease: 'easeInOut',
             }}
           >
-            {/* Glow effect behind image */}
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 rounded-full blur-3xl opacity-30 animate-pulse"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-500 rounded-full blur-3xl opacity-30 animate-pulse"></div>
             
             {/* Profile Image */}
             <motion.img
@@ -153,7 +149,7 @@ const Hero = () => {
       >
         <div className="w-6 h-10 border-2 border-gray-400 dark:border-gray-600 rounded-full flex justify-center">
           <motion.div
-            className="w-1.5 h-3 bg-gradient-to-b from-purple-600 to-pink-600 rounded-full mt-2"
+            className="w-1.5 h-3 bg-gradient-to-b from-blue-600 to-cyan-600 rounded-full mt-2"
             animate={{ y: [0, 12, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
           />

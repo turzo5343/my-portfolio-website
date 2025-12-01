@@ -35,8 +35,8 @@ const Contact = () => {
           <h2 className="text-5xl md:text-6xl font-bold mb-6">
             <span className="text-gradient">Let's Build</span> Your Automation
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Get a free consultation — I'll audit your workflow and show you exactly how automation can help
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            Get a free consultation. I'll audit your workflow and show you exactly how automation can help.
           </p>
         </motion.div>
 
@@ -104,14 +104,14 @@ const Contact = () => {
               whileTap={{ scale: 0.98 }}
               data-testid="contact-email-btn"
             >
-              <div className="p-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl">
+              <div className="p-4 bg-gradient-to-r from-cyan-600 to-teal-600 rounded-xl">
                 <Mail className="text-white" size={32} />
               </div>
               <div className="flex-1">
                 <div className="font-bold text-xl text-gray-900 dark:text-white">Email</div>
                 <div className="text-gray-600 dark:text-gray-400">turzo5343@gmail.com</div>
               </div>
-              <div className="text-purple-600 dark:text-purple-400 group-hover:translate-x-2 transition-transform">
+              <div className="text-cyan-600 dark:text-cyan-400 group-hover:translate-x-2 transition-transform text-xl">
                 →
               </div>
             </motion.a>
@@ -121,7 +121,7 @@ const Contact = () => {
               href="https://calendly.com/turzo5343"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center gap-4 p-6 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-2xl shadow-lg hover:shadow-2xl transition-all"
+              className="group flex items-center gap-4 p-6 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-2xl shadow-lg hover:shadow-2xl transition-all"
               whileHover={{ x: 10, scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               data-testid="book-consultation-btn"
@@ -130,10 +130,10 @@ const Contact = () => {
                 <Calendar className="text-white" size={32} />
               </div>
               <div className="flex-1">
-                <div className="font-bold text-xl">Book a Free Consultation</div>
-                <div className="text-white/80">30-minute strategy call</div>
+                <div className="font-bold text-xl">Book Free Consultation</div>
+                <div className="text-white/90">30 minute strategy call</div>
               </div>
-              <div className="text-white group-hover:translate-x-2 transition-transform">
+              <div className="text-white group-hover:translate-x-2 transition-transform text-xl">
                 →
               </div>
             </motion.a>
@@ -246,15 +246,14 @@ const Contact = () => {
                     </select>
                   </div>
 
-                  {/* Submit button */}
                   <motion.button
                     type="submit"
-                    className="w-full flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-xl font-semibold text-xl shadow-lg hover:shadow-xl transition-all"
+                    className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-xl font-semibold text-base shadow-lg hover:shadow-xl transition-all"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     data-testid="contact-submit-btn"
                   >
-                    <Send size={24} />
+                    <Send size={20} />
                     Send Message
                   </motion.button>
                 </motion.form>
@@ -274,13 +273,13 @@ const Contact = () => {
                     <Check className="text-white" size={48} />
                   </motion.div>
                   <h4 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-                    Message Sent!
+                    Message Sent
                   </h4>
-                  <p className="text-xl text-gray-600 dark:text-gray-300 mb-6">
-                    Thanks for reaching out! I'll review your message and get back to you within 24 hours.
+                  <p className="text-xl text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                    Thanks for reaching out. I'll review your message and get back to you within 24 hours.
                   </p>
                   <p className="text-lg text-gray-500 dark:text-gray-400">
-                    <strong>Next Steps:</strong>
+                    <strong>Next Steps</strong>
                   </p>
                   <ul className="text-left max-w-md mx-auto mt-4 space-y-2 text-gray-600 dark:text-gray-400">
                     <li className="flex items-start gap-2">
@@ -309,9 +308,9 @@ const Contact = () => {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <div className="inline-block bg-gradient-to-r from-purple-100 to-pink-100 dark:from-purple-900/30 dark:to-pink-900/30 rounded-2xl px-8 py-6">
+          <div className="inline-block bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-900/30 dark:to-cyan-900/30 rounded-2xl px-8 py-6">
             <p className="text-lg text-gray-700 dark:text-gray-300">
-              <strong className="text-purple-600 dark:text-purple-400">Quick Response Guarantee:</strong> I respond to all inquiries within 24 hours — usually much faster!
+              <strong className="text-blue-600 dark:text-cyan-400">Quick Response Guarantee:</strong> I respond to all inquiries within 24 hours, usually much faster.
             </p>
           </div>
         </motion.div>

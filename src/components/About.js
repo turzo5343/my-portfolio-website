@@ -42,8 +42,7 @@ const About = () => {
             className="relative"
           >
             <div className="relative">
-              {/* Glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 rounded-3xl blur-3xl opacity-20"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-500 rounded-3xl blur-3xl opacity-20"></div>
               
               {/* Image */}
               <motion.img
@@ -67,18 +66,18 @@ const About = () => {
               <span className="text-gradient">About</span> Tanvir Turzo
             </h2>
             
-            <div className="space-y-4 text-lg text-gray-700 dark:text-gray-300">
+            <div className="space-y-4 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
               <p>
-                I'm a <span className="font-semibold text-purple-600 dark:text-purple-400">Business Automation Specialist & AI Workflow Architect</span> who turns chaotic manual processes into smooth, profitable automation systems.
+                I'm a <span className="font-semibold text-blue-600 dark:text-cyan-400">Business Automation Specialist and AI Workflow Architect</span> who turns chaotic manual processes into smooth, profitable automation systems.
               </p>
               <p>
                 With expertise in <span className="font-semibold">n8n, GoHighLevel, Airtable, Vapi, and ElevenLabs</span>, I've helped startups, agencies, and SMEs save thousands of hours and scale revenue without hiring more staff.
               </p>
               <p>
-                My focus isn't just building workflows — it's solving real business problems. Every automation I create is designed for <span className="font-semibold text-green-600 dark:text-green-400">measurable ROI</span>: faster response times, higher conversions, lower costs.
+                My focus isn't just building workflows. It's solving real business problems. Every automation I create is designed for <span className="font-semibold text-green-600 dark:text-green-400">measurable ROI</span>: faster response times, higher conversions, and lower costs.
               </p>
               <p>
-                I work through a proven process: <span className="font-semibold">Audit → Prototype → Deploy → Monitor & Improve</span>. You get working solutions fast, backed by real data and continuous optimization.
+                I work through a proven process: <span className="font-semibold">Audit, Prototype, Deploy, Monitor, and Improve</span>. You get working solutions fast, backed by real data and continuous optimization.
               </p>
             </div>
 
@@ -129,8 +128,7 @@ const About = () => {
                   whileHover={{ y: -10 }}
                   className="relative bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border border-gray-200 dark:border-gray-700"
                 >
-                  {/* Step number */}
-                  <div className="absolute -top-4 -left-4 w-10 h-10 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                  <div className="absolute -top-4 -left-4 w-10 h-10 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
                     {index + 1}
                   </div>
 
@@ -149,9 +147,8 @@ const About = () => {
                     {step.description}
                   </p>
 
-                  {/* Arrow connector (except last item) */}
                   {index < process.length - 1 && (
-                    <div className="hidden md:block absolute -right-4 top-1/2 transform -translate-y-1/2 text-purple-600 dark:text-purple-400 text-3xl">
+                    <div className="hidden md:block absolute -right-4 top-1/2 transform -translate-y-1/2 text-blue-600 dark:text-cyan-400 text-3xl">
                       →
                     </div>
                   )}
